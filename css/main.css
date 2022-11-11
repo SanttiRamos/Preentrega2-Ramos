@@ -1,0 +1,124 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* CSS DEL HEADER **/
+
+
+nav div a img{
+    width: 70px;
+}
+.nav-color{
+    background-color: rgb(213, 241, 247);
+}
+
+.color-drop {
+    background-color: rgb(227, 239, 241);
+}
+
+/*CSS SERVICIOS*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+main h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/*Estilos tarjetas*/
+
+main .servicios__card{
+    align-items: center;
+    margin: 40px;
+}
+main .servicios .servicios__card h3{
+    text-align: center;
+}
+
+main .servicios .servicios__card p{
+    text-align: center;
+    margin: 0 50px;
+}
+
+main .servicios .servicios__card img{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+/*Estilos de banner principal y ofertas*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.banner img{
+    width: 99%;
+    border-radius: 30px;
+    align-items: center;
+
+}
+
+/*CSS DEL FOOTER**/
+
+footer{
+    list-style: none;
+    background-color: rgb(213, 241, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .menu-footer ul{
+    list-style: none;
+    background-color: rgb(213, 241, 247);
+}
+
+footer .menu-footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer .redes a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .redes a img{
+    width: 1.5rem;
+    margin-right: .2rem;
+}
+
+
+footer a img{
+    width: 4rem;
+}
