@@ -110,6 +110,12 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+footer .menu-footer {
+    display: none;
+}
+footer .derechos{
+    display: none;
+}
 
 footer .menu-footer ul{
     list-style: none;
@@ -268,5 +274,11 @@ fieldset {
         filter: drop-shadow(3px 3px 5px rgb(75, 146, 168));
         color: rgb(73, 125, 131);
     }
-    
+
+    footer .menu-footer {
+        display: flex;
+    }
+    footer .derechos{
+        display: flex;
+    }
 }
