@@ -215,11 +215,21 @@ fieldset {
   border: 1px solid black;
 }
 
+/* COMO COMPRAR */
+
+
+
 /*MQ*/
 @media(min-width:992px){
     main .principal{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+    }
+
+    main .secundario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         column-gap: 4rem;
     }
 
