@@ -22,6 +22,17 @@ nav div a img{
     background-color: rgb(213, 241, 247);
 }
 
+
+
+.nav-deco a{
+    color: rgb(73, 125, 131);
+}
+
+.nav-deco a:hover {
+    color: white;
+    text-shadow: 1px 1px 3px rgb(73, 125, 131);
+}
+
 /*CSS SERVICIOS*/
 main {
     display: flex;
@@ -47,6 +58,7 @@ main .principal__card{
     margin: 40px;
     overflow: hidden;
 }
+
 main .principal .principal__card h3{
     text-align: center;
 }
@@ -54,13 +66,13 @@ main .principal .principal__card h3{
 main .principal .principal__card p{
     text-align: center;
     margin: 0 50px;
-
 }
 
 main .principal .principal__card img{
     width: 80%;
     display: block;
     margin: auto;
+    max-height: 25rem
 }
 
 .border-card {
@@ -139,7 +151,7 @@ main .about img{
     width: 100%;
     box-shadow: 2px 2px 5px rgb(119, 118, 118);
     border-radius: 50px;
-    margin: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 main .about p{
@@ -243,4 +255,12 @@ fieldset {
     main .about img{
         width: 100%;
     }
+
+    main .principal__card:hover{
+        align-items: center;
+        margin: 40px;
+        overflow: hidden;
+        filter: drop-shadow(3px 3px 5px rgb(75, 146, 168));
+    }
+    
 }
