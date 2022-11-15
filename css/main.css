@@ -17,12 +17,9 @@ body{
 nav div a img{
     width: 70px;
 }
+
 .nav-color{
     background-color: rgb(213, 241, 247);
-}
-
-.color-drop {
-    background-color: rgb(227, 239, 241);
 }
 
 /*CSS SERVICIOS*/
@@ -45,24 +42,32 @@ main h2{
 
 /*Estilos tarjetas*/
 
-main .servicios__card{
+main .principal__card{
     align-items: center;
     margin: 40px;
+    overflow: hidden;
 }
-main .servicios .servicios__card h3{
+main .principal .principal__card h3{
     text-align: center;
 }
 
-main .servicios .servicios__card p{
+main .principal .principal__card p{
     text-align: center;
     margin: 0 50px;
+
 }
 
-main .servicios .servicios__card img{
-    width: 40%;
+main .principal .principal__card img{
+    width: 80%;
     display: block;
     margin: auto;
 }
+
+.border-card {
+    box-shadow: 1px 1px 5px rgb(119, 118, 118);
+    border-radius: 50px;
+}
+
 
 /*Estilos de banner principal y ofertas*/
 
@@ -70,14 +75,14 @@ main .servicios .servicios__card img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 1.2rem 1.2rem;
 }
 .banner img{
     width: 99%;
     border-radius: 30px;
     align-items: center;
-
 }
+
 
 /*CSS DEL FOOTER**/
 
@@ -121,4 +126,110 @@ footer .redes a img{
 
 footer a img{
     width: 4rem;
+}
+
+/* SOBRE NOSOTROS */
+
+main .about{
+    display: flex;
+    flex-direction: column;
+}
+
+main .about img{
+    width: 100%;
+    box-shadow: 2px 2px 5px rgb(119, 118, 118);
+    border-radius: 50px;
+}
+
+main .about p{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*CONTACTO*/
+
+main .contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+    max-width: 25rem;
+    width: 90%;
+    background: #F9F9F9;
+    padding: 1.5rem;
+    margin: 5rem auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contacto h2{
+    font-size: 2rem;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contacto input,
+.contacto textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 2rem 0 0 0;
+  padding: 1rem;
+}
+
+
+.contacto input:hover,
+.contacto textarea:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.contacto button{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background:rgb(13, 205, 248);
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contacto button:hover{
+    width: 100%;
+    background:rgb(18, 147, 176);
+    color: black;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border: 1px solid black;
+}
+
+/*MQ*/
+@media(min-width:992px){
+    main .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+    }
+
+    main .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+    }
+    
+    main .about img{
+        width: 100%;
+    }
 }
