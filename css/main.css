@@ -75,6 +75,11 @@ main .principal .principal__card img{
     max-height: 25rem
 }
 
+main .principal .principal__card a{
+    text-decoration: none;
+    color: black;
+}
+
 .border-card {
     box-shadow: 1px 1px 5px rgb(119, 118, 118);
     border-radius: 50px;
