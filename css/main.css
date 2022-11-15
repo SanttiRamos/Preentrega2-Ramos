@@ -75,7 +75,7 @@ main .principal .principal__card img{
     max-height: 25rem
 }
 
-main .principal .principal__card a{
+main .principal a{
     text-decoration: none;
     color: black;
 }
@@ -266,6 +266,7 @@ fieldset {
         margin: 40px;
         overflow: hidden;
         filter: drop-shadow(3px 3px 5px rgb(75, 146, 168));
+        color: rgb(73, 125, 131);
     }
     
 }
