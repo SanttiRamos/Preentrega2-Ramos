@@ -139,6 +139,7 @@ main .about img{
     width: 100%;
     box-shadow: 2px 2px 5px rgb(119, 118, 118);
     border-radius: 50px;
+    margin: 2rem;
 }
 
 main .about p{
