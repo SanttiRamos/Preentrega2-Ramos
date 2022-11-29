@@ -1,0 +1,54 @@
+
+
+@mixin botones{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background:rgb(13, 205, 248);
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+@mixin botones-hover{
+    width: 100%;
+    background:rgb(18, 147, 176);
+    color: black;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+@mixin cards{
+    align-items: center;
+    margin: 40px;
+    overflow: hidden;
+    h3{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        margin: 0 50px;
+    }
+    img{
+        width: 80%;
+    display: block;
+    margin: auto;
+    max-height: 25rem
+    }
+}
+
+@mixin banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 1.2rem;
+
+    img{
+        width: 99%;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,23 @@
+
+
+/*CSS SOBRE NOSOTROS*/
+
+main{
+    .about{
+        p{
+            font-size: 2rem;
+            margin: auto;
+            text-align: center;
+            padding: 1rem;
+            color: $color-texto;
+        }
+
+        img{
+            width: 100%;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            align-items: center;
+        }
+    }
+}

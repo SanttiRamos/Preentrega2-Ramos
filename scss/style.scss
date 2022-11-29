@@ -1,0 +1,131 @@
+// utilidades
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "html/contacto";
+@import "html/about";
+@import "html/footer";
+
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: $color-fondo;
+}
+/*CSS DEL HEADER*/
+
+nav {
+    div{
+        a{
+            img{
+                width: 70px;    
+            }
+        }
+    }
+
+}
+
+.nav-color{
+    background-color: $color-principal;
+}
+
+
+/* CSS DEL MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    h1{
+        font-size: 3rem;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 30px 0px;
+        color: $color-texto;
+    }
+    h2{
+        text-align: center;
+        margin: 20px 0px;
+        color: $color-texto;
+    }
+
+    .principal{
+        .principal__card{
+            @include cards
+        }
+
+        a{
+            text-decoration: none;
+            color: $color-texto;
+        }
+        .principal__card:hover{
+            align-items: center;
+            margin: 40px;
+        }
+
+        footer .menu-footer {
+            display: flex;
+        }
+        footer .derechos{
+            display: flex;
+        }
+    }
+}
+
+.border-card{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.banner {
+    @include banner
+}
+
+/*MQ*/
+
+@media(min-width:992px){
+    main{
+        .principal{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 4rem;
+        }
+
+        .secundario{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+        }
+
+        .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+
+    footer{
+        .menu-footer{
+            display: flex;
+        }
+        
+        .derechos{
+            display: flex;
+        }
+    }
+
+
+}
+
+

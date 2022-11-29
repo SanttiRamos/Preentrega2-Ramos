@@ -1,0 +1,59 @@
+
+
+/*CSS DEL FOOTER*/
+
+footer{
+    list-style: none;
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-footer {
+        display: none;
+        ul{
+            list-style: none;
+            background-color: $color-principal;
+            li{
+                a {
+                    text-decoration: none;
+                    color: rgb(16, 53, 75);
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .derechos{
+        display: none;
+        p{
+            text-align: center;
+            font-size: 1rem;
+            color: $color-texto;
+        }
+    }
+    
+    .redes{
+        p{
+            text-align: center;
+            color: $color-texto;
+        }
+        a{
+            margin: 10px;
+            text-decoration: none;
+            color: $color-texto;
+            display: inline-block;
+            text-align: center;
+            img{
+                width: 1.5rem;
+                margin-right: .2rem;
+            }
+            
+        }
+    }
+    a{
+        img{
+            width: 4rem;
+        }
+    } 
+    
+}
