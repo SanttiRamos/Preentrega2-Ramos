@@ -1,6 +1,8 @@
+main .contacto, footer, main, main .principal footer .menu-footer, main .principal footer .derechos {
+  display: flex; }
+
 /* CSS CONTACTO */
 main .contacto {
-  display: flex;
   flex-direction: column;
   max-width: 25rem;
   width: 90%;
@@ -65,7 +67,6 @@ main .about img {
 footer {
   list-style: none;
   background-color: #d5f1f7;
-  display: flex;
   justify-content: space-between;
   align-items: center; }
   footer .menu-footer {
@@ -105,7 +106,7 @@ footer {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #ECEEF3; }
 
 /*CSS DEL HEADER*/
@@ -116,43 +117,40 @@ nav div a img {
   background-color: #d5f1f7; }
 
 /* CSS DEL MAIN */
-main {
-  display: flex;
-  flex-direction: column; }
-  main h1 {
-    font-size: 3rem;
-    letter-spacing: 5px;
+main h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 30px 0px;
+  color: black; }
+
+main h2 {
+  text-align: center;
+  margin: 20px 0px;
+  color: black; }
+
+main .principal .principal__card {
+  align-items: center;
+  margin: 40px;
+  overflow: hidden; }
+  main .principal .principal__card h3 {
+    text-align: center; }
+  main .principal .principal__card p {
     text-align: center;
-    margin: 30px 0px;
-    color: black; }
-  main h2 {
-    text-align: center;
-    margin: 20px 0px;
-    color: black; }
-  main .principal .principal__card {
-    align-items: center;
-    margin: 40px;
-    overflow: hidden; }
-    main .principal .principal__card h3 {
-      text-align: center; }
-    main .principal .principal__card p {
-      text-align: center;
-      margin: 0 50px; }
-    main .principal .principal__card img {
-      width: 50%;
-      display: block;
-      margin: auto;
-      max-height: 25rem; }
-  main .principal a {
-    text-decoration: none;
-    color: black; }
-  main .principal .principal__card:hover {
-    align-items: center;
-    margin: 40px; }
-  main .principal footer .menu-footer {
-    display: flex; }
-  main .principal footer .derechos {
-    display: flex; }
+    margin: 0 50px; }
+  main .principal .principal__card img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    max-height: 25rem; }
+
+main .principal a {
+  text-decoration: none;
+  color: black; }
+
+main .principal .principal__card:hover {
+  align-items: center;
+  margin: 40px; }
 
 .border-card {
   border-radius: 10px;

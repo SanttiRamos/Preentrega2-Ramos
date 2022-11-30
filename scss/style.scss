@@ -2,6 +2,7 @@
 
 @import "utilidades/variables";
 @import "utilidades/mixin";
+@import "utilidades/extend";
 @import "html/contacto";
 @import "html/about";
 @import "html/footer";
@@ -16,7 +17,7 @@
 }
 
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Raleway', sans-serif;;
     background-color: $color-fondo;
 }
 /*CSS DEL HEADER*/
@@ -40,8 +41,7 @@ nav {
 /* CSS DEL MAIN */
 
 main {
-    display: flex;
-    flex-direction: column;
+    @extend %displayFlex;
     h1{
         font-size: 3rem;
         letter-spacing: 5px;
@@ -70,10 +70,10 @@ main {
         }
 
         footer .menu-footer {
-            display: flex;
+            @extend %displayFlex;
         }
         footer .derechos{
-            display: flex;
+            @extend %displayFlex;
         }
     }
 }

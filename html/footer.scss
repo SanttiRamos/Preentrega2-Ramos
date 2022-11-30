@@ -5,7 +5,7 @@
 footer{
     list-style: none;
     background-color: $color-principal;
-    display: flex;
+    @extend %displayFlex;
     justify-content: space-between;
     align-items: center;
 
