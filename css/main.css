@@ -68,7 +68,8 @@ footer {
   list-style: none;
   background-color: #d5f1f7;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  font-weight: bold; }
   footer .menu-footer {
     display: none; }
     footer .menu-footer ul {
@@ -110,8 +111,10 @@ body {
   background-color: #ECEEF3; }
 
 /*CSS DEL HEADER*/
-nav div a img {
-  width: 70px; }
+nav {
+  font-weight: bold; }
+  nav div a img {
+    width: 70px; }
 
 .nav-color {
   background-color: #d5f1f7; }
